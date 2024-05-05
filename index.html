@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Simple Calc</title>
+</head>
+<body >
+    
+    <table id="calc">
+        <tr >
+            <td colspan="4">
+                <input type="text" name="display" id="result" placeholder="0">
+            </td>
+        </tr>
+        <tr>
+            <td><button type="button" class="numbers" value="7" onclick="display('7')">7</button></td>
+            <td><button type="button" class="numbers" value="8" onclick="display('8')" >8</button></td>
+            <td><button type="button" class="numbers" value="9" onclick="display('9')" >9</button></td>
+            <td><button type="button" class=" operation" value="/" onclick="display('/')" >&divide;</button></td>
+        </tr>
+
+        <tr>
+            <td><button type="button" class="numbers" value ="4" onclick="display('4')"  >4</button></td>
+            <td><button type="button" class="numbers" value ="5" onclick="display('5')">5</button></td>
+            <td><button type="button" class="numbers"value+="6" onclick="display('6')" >6</button></td>
+            <td><button type="button" class=" operation" value ="*" onclick="display('*')">&times;</button>
+        </tr>
+
+        <tr>
+
+            <td><button type="button" class="numbers" value ="1" onclick="display('1')" >1</button></td>
+            <td><button type="button" class="numbers" value ="2" onclick="display('2')" >2</button></td>
+            <td><button type="button" class="numbers"value="3" onclick="display ('3')" >3</button></td>
+            <td><button type="button" class=" operation"  value ="-" onclick="display ('-')" >&minus;</button>
+
+        </tr>
+
+        <tr>
+
+            <td><button type="button" class="numbers" value ="0" onclick="display('0')" >0</button></td>
+            <td><button type="button" class="numbers" value ="." onclick="display ('.')" >.</button></td>
+            <td><button type="button" class="numbers"value="+" onclick="display ('+')" >+</button></td>
+            <td><button type="button" class="calc-operator operation" value ="=" onclick="solve()" id="equal">=</button>
+        </tr>
+        
+    </table>
+
+    <div class="repo">
+        <h5><a href="#" >Click me to view my Git repo</a></h5>
+        
+    </div>
+</body>
+</html>  
